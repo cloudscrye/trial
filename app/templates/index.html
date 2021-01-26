@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Welcome to the VGS test application. To get started, enter your credit card information below.</h1>
+<form method="post" action="/add_message">
+    <p>
+        <font face="Tahoma">Credit Card Number</font>
+    </p>
+    <input type="text" placeholder="ex: 4111 1111 1111 1111" name="cardnum">
+    <p>
+        <font face="Tahoma">Expiration Date</font>
+    </p>
+    <input type="text" placeholder="ex: 01/2022" name="expir">
+    <p>
+        <font face="Tahoma">CVV</font>
+    </p>
+    <input type="text" placeholder="ex: 999" name="last3">
+    <br /><br />
+    <button type="submit">Send to VGS!</button>
+</form>
+
+{% endblock %}

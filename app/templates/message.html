@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VGS Test App Page 2</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Create two equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 50%;
+          padding: 10px;
+
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        </style>
+</head>
+<body>
+<h1>
+    Card information has been redacted and tokenized by VGS!
+</h1>
+<h2>
+    To view the redacted data, please enter the alias tokens generated on the right.
+</h2>
+    <div class="row">
+        <div class="column">
+          <form method="post" action="/forward">
+            <p>
+                <font face="Tahoma">Credit Card Token</font>
+            </p>
+            <input type="text" placeholder="Enter alias here" name="cardnum">
+            <p>
+                <font face="Tahoma">Expiration Date Token</font>
+            </p>
+            <input type="text" placeholder="Enter alias here" name="expir">
+            <p>
+                <font face="Tahoma">CVV Token</font>
+            </p>
+            <input type="text" placeholder="Enter alias here" name="last3">
+            <br /><br />
+            <button type="submit">Retrieve your data!</button>
+        </form>
+        </div>
+        <div class="column" style="background-color:#bbb;">
+            <h3>Here's the output containing your tokens:</h4>
+                <br />
+                <h4>Credit Card Alias:</h4>
+                <p>{{ cardtoken }}</p>
+                <br />
+                <h4>Expiration Alias:</h4>
+                <p>{{ extoken}}</p>
+                <br />
+                <h4>CVV Alias:</h4>
+                <p>{{ l3token }}</p>
+                <br />
+        </div>
+      </div>
+
+</body>
+</html>

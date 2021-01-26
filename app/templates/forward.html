@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VGS Test App Page 3</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Create two equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 50%;
+          padding: 10px;
+
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        </style>
+</head>
+<body>
+<h1>
+    Congratulations!!! VGS has returned the output of your tokens!
+</h1>
+
+    <div class="row">
+        <div class="column">
+            <h3>
+                Here is the information your tokens returned:
+            </h3>
+                
+                <h4>Credit Card:</h4>
+                <p>{{ cardreturn }}</p>
+                <h4>Expiration Date:</h4>
+                <p>{{ exreturn}}</p>
+                <h4>CVV</h4>
+                <p>{{ l3return }}</p>
+        </div>
+        <div class="column">
+
+
+        </div>
+      </div>
+
+</body>
+</html>
+</head>
+<body>
