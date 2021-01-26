@@ -26,16 +26,16 @@ After the application is running, you can send fake credit card data to VGS's ec
 
 You will need to populate the .env file, located within the app/ folder. You will need the following:
 
-###1. Your vault id. This is located at the top of the page at 
+### 1. Your vault id. This is located at the top of the page at 
         dashboard.verygoodsecurity.com
 
-###2. HTTPS proxy username and password. These can also be located on dashboard.verygoodseurity.com by navigating the left sidebar to 
+### 2. HTTPS proxy username and password. These can also be located on dashboard.verygoodseurity.com by navigating the left sidebar to 
 
 **Administration > Vault Settings**, 
 
 and then selecting the **Access Credentials** tab. Once there, simply select **Generate Credentials** to retrieve a working set of credentials to reach your vault.
 
-###Example:
+### Example:
 
 Your .env file will look like this:
 
@@ -44,7 +44,7 @@ Your .env file will look like this:
 `HTTPS_PROXY_PASSWORD="generatedpassword"`
 `VAULT="vaultidhere"`
 
-##What else do I need?
+## What else do I need?
 
 The application assumes you have familiarity with Python, Docker, and ngrok, and have these environments set up.
 
